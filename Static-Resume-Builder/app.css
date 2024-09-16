@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #2E073F;
+    --secondary-color: #7A1CAC;
+    --btn-color: #EBD3F8;
+    --text-color-primary: #ffffff;
+    --text-color-secondary: #000000;
+
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color-primary);
+    background: var(--primary-color);
+}
+
+body {
+    margin: 0px;
+}
+
+#head {
+    margin: 20px auto 20px auto
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.heading {
+    margin: 0px;
+    padding: 0px;
+}
+
+.form-section .heading {
+    margin-bottom: 20px;
+}
+
+.description {
+    padding: 0;
+    margin: 0;
+}
+
+#resume-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    max-width: 520px;
+    min-width: 280px;
+    background-color: var(--secondary-color);
+    margin: auto auto 50px auto;
+}
+
+.form-section {
+    text-align: left;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 2px auto 10px auto;
+}
+
+textarea {
+    resize: vertical;
+}
+
+span {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+img {
+    margin: 10px auto 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+#input-file {
+    display: none;
+}
+
+.img-btn {
+    cursor: pointer;
+    background: var(--btn-color);
+    color: var(--text-color-secondary);
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    text-align: center;
+    width: fit-content;
+}
+
+.field-btn {
+    cursor: pointer;
+    background: var(--btn-color);
+    color: var(--text-color-secondary);
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    text-align: center;
+    width: fit-content;
+    display: inline;
+    margin-bottom: 10px;
+}
+
+#gen-cv-btn {
+    cursor: pointer;
+    background: var(--btn-color);
+    color: var(--text-color-secondary);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto 20px auto;
+}
+
+#profile-pic {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: left;
+    width: fit-content;
+}
+
+label {
+    display: block;
+}

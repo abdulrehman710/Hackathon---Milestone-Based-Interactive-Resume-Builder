@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume-Gnerator</title>
+    <link rel="stylesheet" href="app.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div id="head">
+            <header>
+                <h1 class="heading">Static Resume Builder</h1>
+                <p class="description">Your Resume, Your Way, Customizable and Easy to Use</p>
+            </header>
+        </div>
+        <div id="form-container">
+            <form action="#" id="resume-form">
+                <div class="form-section" id="pers-detail">
+                    <h2 class="heading" id="section-1">Personal Information</h2>
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Full Name" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                    <label for="phone-no">Phone No.</label>
+                    <input type="tel" name="phone-no" id="phone-no" pattern="03[0-9]{9}" placeholder="03XXXXXXXXX" required>
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" rows="3" required></textarea>
+                    <div id="profile-pic">
+                        <img src="avatar.jpg" id="profile-img">
+                        <label for="input-file" class="img-btn">Upload Image</label>
+                        <input type="file" accept="image/*" id="input-file">
+                    </div>
+                </div>
+                <div class="form-section" id="prof-detail">
+                    <h2 class="heading">Professional Information</h2>
+                    <label for="obj">Objecive</label>
+                    <textarea name="obj" id="obj" rows="3" required></textarea>
+                    <label for="education">Education</label>
+                    <textarea name="education" id="education" rows="3" placeholder="Press enter after each degree-info"></textarea>
+                    <label for="work">Work Experience</label>
+                    <textarea name="work" id="work" rows="3" placeholder="Press enter after each work-info"></textarea>
+                    <label for="skills">Skills</label>
+                    <textarea name="skills" id="skills" rows="3" placeholder="Press enter after each skill"></textarea>
+                </div>
+                <div class="form-section" id="social">
+                    <h2 class="heading">Social Links<span>(optional)</span></h2>
+                    <label for="fb">Facebook</label>
+                    <input type="text" name="fb" id="fb">
+                    <label for="git-hub">Git Hub</label>
+                    <input type="text" name="git-hub" id="git-hub">
+                    <label for="linkedin">Linkedin</label>
+                    <input type="text" name="linkedin" id="linkedin">
+                    <label for="web">Website</label>
+                    <input type="text" name="web" id="web">
+                </div>
+                <button id="gen-cv-btn">Generate CV</button>
+            </form>
+        </div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
